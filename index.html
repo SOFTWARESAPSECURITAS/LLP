@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<style>
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  min-width: 200px;
+  padding: 0;
+  border: 1px solid #ccc;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+  display: block;
+}
+
+/* Optional: Style the links */
+.dropdown-menu li a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+</style>
+	<head>
+		<meta charset="utf-8" />
+		<title>First Step Advisors</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="Author" content="" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	</head>
+	<body class="smoothscroll enable-animation">
+
+		<div id="wrapper">
+			<div id="header" class="sticky transparent header-md clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+						<a class="logo pull-left scrollTo" href="#top">
+							<img src="assets/images/logo-light.png" alt="" />
+							<img src="assets/images/logo-dark.png" alt="" />
+						</a>
+						<div class="navbar-collapse pull-right nav-main-collapse collapse">
+							<nav class="nav-main">
+
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active smoothscroll"><a href="#slider" >HOME</a></li>
+									<li class="dropdown"><a class="" href="#about">ABOUT US</a></li>
+									
+
+									<li class="dropdown">
+  <a class="dropdown-toggle" href="#">SERVICES</a>
+  <ul class="dropdown-menu">
+
+    <!-- Business Advisory -->
+    <li class="dropdown-submenu">
+      <a href="index-corporate-1.html" class="dropdown-toggle">Business Advisory</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Business Setup & Structuring</a></li>
+        <li><a href="#">FEMA/RBI Compliances</a></li>
+        <li><a href="#">Due Diligence & Valuation Support</a></li>
+        <li><a href="#">Investment Advisory</a></li>
+        <li><a href="#">Risk Assessment</a></li>
+        <li><a href="#">Policy Drafting</a></li>
+      </ul>
+    </li>
+
+    <!-- Payroll & HR Services -->
+    <li class="dropdown-submenu">
+      <a href="index-corporate-3.html" class="dropdown-toggle">Payroll & HR Services</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Monthly Payroll Processing</a></li>
+        <li><a href="#">PF, ESI, PT, other labour returns</a></li>
+        <li><a href="#">Employee Onboarding/Exit formalities</a></li>
+        <li><a href="#">HR Policy Drafting</a></li>
+        <li><a href="#">Dispute Resolution Support</a></li>
+      </ul>
+    </li>
+
+    <!-- Legal Compliances -->
+    <li class="dropdown-submenu">
+      <a href="index-corporate-4.html" class="dropdown-toggle">Legal Compliances</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Virtual Chief Legal Officer</a></li>
+        <li><a href="#">Contract Drafting & Vetting</a></li>
+        <li><a href="#">Legal Advisory & Opinions</a></li>
+        <li><a href="#">Litigation Support & Liaison</a></li>
+        <li><a href="#">Labour Law Compliances</a></li>
+        <li><a href="#">Regulatory Compliances (SEBI, RBI, etc.)</a></li>
+        <li><a href="#">Trademark & IPR Services</a></li>
+        <li><a href="#">Family Lawyer</a></li>
+      </ul>
+    </li>
+
+    <!-- Secretarial Services -->
+    <li class="dropdown-submenu">
+      <a href="index-corporate-5.html" class="dropdown-toggle">Secretarial Services</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Company Incorporation</a></li>
+        <li><a href="#">Annual Filings (ROC, MGT-7, AOC-4, etc.)</a></li>
+        <li><a href="#">Board Meeting Compliances</a></li>
+        <li><a href="#">XBRL Filings</a></li>
+        <li><a href="#">Event-based ROC Compliances</a></li>
+        <li><a href="#">LLP & Section 8 Company Support</a></li>
+      </ul>
+    </li>
+
+    <!-- Insurance Advisory -->
+    <li class="dropdown-submenu">
+      <a href="index-corporate-6.html" class="dropdown-toggle">Insurance Advisory</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Risk Profiling & Customised Plans</a></li>
+        <li><a href="#">Employee Coverage Consulting</a></li>
+        <li><a href="#">Claim Management</a></li>
+        <li><a href="#">Claim Litigation</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</li>
+
+									<li class="dropdown smoothscroll"><a class="" href="#serve">INDUSTRIES WE SERVE</a></li>
+									<li class="dropdown smoothscroll"><a class="" href="#us">WHY CHOOSE US</a></li>
+									<li class="dropdown smoothscroll"><a class="" href="#blog">BLOG</a></li>
+									<li class="dropdown smoothscroll"><a class="" href="#contact-header">CONTACT US</a></li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+
+			<!-- SLIDER -->
+			<section id="slider" style="height:800px; background-image:url('assets/images/cfo.png'); background-size: contain; background-position: center;">
+				<div class="overlay dark-6"><!-- dark overlay [0 to 9 opacity] --></div>
+
+				<div class="display-table">
+					<div class="display-table-cell vertical-align-middle">
+						<div class="container">
+
+							<div class="slider-featured-text text-left">
+								<h2 class="text-white wow fadeInUp weight-800" data-wow-delay="0.4s" style="font-size: 46px; font-weight: 800 !important; line-height: 60px;">
+									VIRTUAL CFO & CHIEF LEGAL OFFICER
+								</h2>
+									
+				
+								<h2 class="weight-600 text-white wow fadeInUp" data-wow-delay="0.8s" >One stop Solution for </h2>
+									<h4 class="weight-300 text-white wow fadeInUp">Business advisory<br />
+										Payroll<br />
+										Legal Compliances<br />
+										Insurance Advisory<br />
+										Accounts & Taxation</h4>
+								<a class="btn btn-primary btn-lg wow fadeInUp smoothscroll" data-wow-delay="1s" href="#contact-header">CONTACT US</a>
+							</div>
+				
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<!-- /SLIDER -->
+
+			<!-- ABOUT -->
+			<section id="about">
+				<div class="container">
+
+					<header class="text-center margin-bottom-60">
+						<h2>We Are First Step Advisors</h2>
+						<hr />
+					</header>
+
+
+					<div class="row">
+
+						<div class="col-sm-6">
+							<img class="img-responsive" src="assets/images/what-are-the-benefits-of-virtual-cfo.jpg" alt="" />
+						</div>
+
+						<div class="col-sm-6">
+							<p class="justify">
+								At First Step Advisors, Our mission has always been simple yet powerful — to empower startups, SMEs, and growing businesses with the same level of financial expertise and strategic insight that big companies enjoy. We’re your trusted advisors, offering comprehensive, ongoing, and customized solutions across accounting, legal compliance, CFO services, and Business Advisory. Whether you're an emerging startup or an expanding enterprise, we provide end-to-end support tailored to your business lifecycle — not just one-off services. What sets us apart is our partnership-driven approach. We don’t just deliver reports — we deliver insights, strategies, and hands-on support to help you grow. Our team of seasoned professionals brings deep domain knowledge, practical experience, and a problem-solving mindset to every engagement. 
+								Headquartered in Delhi NCR, First Step Advisors proudly serves a diverse client base — from innovative startups and fast-scaling SMEs to MNCs establishing their footprint in India and seasoned equity investors seeking financial clarity.
+							</p>
+
+							<hr />
+
+							<div class="row countTo-sm text-center">
+
+								<div class="col-xs-6 col-sm-4">
+									<i class="fa fa-users size-20"></i> &nbsp; 
+									<span class="countTo" data-speed="3000" style="color:#59BA41">26</span>
+									<h6>HAPPY CLIENTS</h6>
+								</div>
+
+								<div class="col-xs-6 col-sm-4">
+									<i class="fa fa-briefcase size-20"></i> &nbsp; 
+									<span class="countTo" data-speed="3000" style="color:#774F38">102</span>
+									<h6>FINISHED PROJECTS</h6>
+								</div>
+
+								<div class="col-xs-6 col-sm-4">
+									<i class="fa fa-twitter size-20"></i> &nbsp; 
+									<span class="countTo" data-speed="3000" style="color:#C02942">4897</span>
+									<h6>TWITTER FOLLOWERS</h6>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+
+				</div>
+			</section>
+			<!-- /ABOUT -->
+             <section id="serve">
+				<div class="container">
+
+					<header class="text-center margin-bottom-60">
+						<h2>Industries We Serve</h2>
+						<hr />
+					</header>
+
+
+					<div class="row">
+
+						<div class="col-sm-6">
+							<img class="img-responsive" src="assets/images/values-2.png" alt="" />
+						</div>
+
+						<div class="col-sm-6">
+							<div class="justify">
+  <ul class="list-group">
+       <li class="list-group-item">IT & ITES</li>
+       <li class="list-group-item">Manufacturing</li>
+        <li class="list-group-item">Security & Facility Management</li>
+        <li class="list-group-item">Startups & MSMEs</li>
+        <li class="list-group-item">Healthcare</li>
+        <li class="list-group-item">Education</li>
+        <li class="list-group-item">Financial Services</li>
+        <li class="list-group-item">Logistics</li>
+    </ul>
+</div>
+
+							<hr />
+
+						
+
+						</div>
+
+					</div>
+
+
+				</div>
+			</section>
+     <section id="us">
+				<div class="container">
+
+					<header class="text-center margin-bottom-60">
+						<h2>Why Choose Us</h2>
+						<hr />
+					</header>
+
+
+					<div class="row">
+
+						<div class="col-sm-6">
+							<img class="img-responsive" src="assets/images/values-3.png" alt="" />
+						</div>
+
+						<div class="col-sm-6">
+							<div class="justify">
+    <p class="justify"></p>
+       Our strength lies in the cumulative experience of our team, which spans over 50+ years across diverse domains including legal advisory, company secretarial practices, regulatory compliance, financial analytics, payroll management, and corporate insurance
+Our Core team comprises highly qualified professionals, including Company Secretaries, Chartered Accountants, Lawyers, and MBAs, who bring deep domain expertise and practical insight to every engagement. We have established ourselves as a trusted partner in delivering reliable and result-oriented consultation services across legal, secretarial, compliance, advisory, analytics, payroll, and insurance domains.
+We offer end-to-end managed services, allowing businesses to focus on their core operations while we take care of regulatory, legal, and operational complexities. Understanding that each business is unique, we provide customised solutions tailored to industry-specific requirements and client objectives. Leveraging technology, we offer clients access to dashboards and analytics that ensure transparency, control, and real-time compliance tracking.
+Above all, we maintain the highest standards of confidentiality and regulatory compliance, assuring our clients of professional integrity and dependable service delivery at every stage.
+</p>
+    
+</div>
+
+							<hr />
+
+						
+
+						</div>
+
+					</div>
+
+
+				</div>
+			</section>
+
+<section id="blog">
+    <div class="container">
+
+        <header class="text-center margin-bottom-60">
+            <h2>OUR BLOGS</h2>
+            <hr />
+        </header>
+
+        <div class="row">
+
+            <!-- Blog 1 -->
+            <div class="col-sm-4 text-center">
+                <img class="img-responsive blog-img" src="assets/images/registration.jpg" alt="Blog 1" />
+                <h4 class="blog-title">Company Registration Process</h4>
+                <p class="blog-summary">Revalidation of 12AB and 80G Registrations</p>
+                <a href="blog-registration.html" class="btn btn-primary">Read More</a>
+            </div>
+
+            <!-- Blog 2 -->
+            <div class="col-sm-4 text-center">
+                <img class="img-responsive blog-img" src="assets/images/incometaxbill.webp" alt="Blog 2" />
+                <h4 class="blog-title">Understanding Income Tax Bills</h4>
+                <p class="blog-summary">A complete guide to filing and managing income tax bills and deductions.</p>
+                <a href="blog-incometax.html" class="btn btn-primary">Read More</a>
+            </div>
+
+            <!-- Blog 3 -->
+            <div class="col-sm-4 text-center">
+                <img class="img-responsive blog-img" src="assets/images/isuranceclain.jpg" alt="Blog 3" />
+                <h4 class="blog-title">Insurance Claim Process</h4>
+                <p class="blog-summary">Understand how to file and manage insurance claims effectively.</p>
+                <a href="blog-insurance.html" class="btn btn-primary">Read More</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<style>
+    .blog-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .blog-title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    .blog-summary {
+        font-size: 14px;
+        color: #555;
+        margin: 10px 0;
+        padding: 0 10px;
+    }
+
+    .btn {
+        margin-bottom: 20px;
+    }
+</style>
+
+
+
+
+			<!-- CALLOUT -->
+			<div class="callout callout-theme-color">
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-md-9"><!-- title + shortdesc -->
+							<h3>Want to be part of our team?</h3>
+							<p>If so, click to join now, and be part of our dynamic team!</p>
+						</div>
+
+						<div class="col-md-3"><!-- button -->
+							<a href="page-careers.html" class="btn btn-primary btn-lg">Join Our Team</a>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<!-- /CALLOUT -->
+		
+
+
+
+			<!-- PARALLAX -->
+			<section class="parallax parallax-2" style="background-image: url('assets/images/demo/wall3-min.jpg');">
+				<div class="overlay dark-6"><!-- dark overlay [1 to 9 opacity] --></div>
+
+				<div class="container">
+
+					<div class="text-center">
+						<h3 class="nomargin">Share Your Thoughts</h3>
+						<p class="font-lato weight-300 lead nomargin-top">We can't solve problems by using the same kind of thinking we used when we created them.</p>
+					</div>
+
+					<ul class="margin-top-80 social-icons list-unstyled list-inline">
+						<li>
+							<a target="_blank" href="#">
+								<i class="fa fa-facebook"></i>
+								<h4>Facebook</h4>
+								<span>Be Our Friend</span>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="#">
+								<i class="fa fa-twitter"></i>
+								<h4>Twitter</h4>
+								<span>Follow Us</span>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="#">
+								<i class="fa fa-youtube"></i>
+								<h4>Youtube</h4>
+								<span>Our Videos</span>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="#">
+								<i class="fa fa-instagram"></i>
+								<h4>Instagram</h4>
+								<span>See Our Images</span>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="#">
+								<i class="fa fa-linkedin"></i>
+								<h4>Linkedin</h4>
+								<span>Check Our Identity</span>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="#">
+								<i class="fa fa-pinterest"></i>
+								<h4>Pinterest</h4>
+								<span>Visual Discovery</span>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+
+			</section>
+			<!-- /PARALLAX -->
+
+
+			<!-- CONTACT -->
+			 	<style>
+#contact-header {
+    position: relative;
+	 width: 100vw;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+    padding: 80px 20px;
+	 box-sizing: border-box;
+}
+
+#contact-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background: url('assets/images/india-gate-img.jpg') center center / cover no-repeat;
+    filter: blur(0px);
+    z-index: -1;
+    transform: scale(1.05); /* Prevent blur edges from showing */
+}
+
+#contact-header .content-wrapper {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.2); 
+    border-radius: 8px;
+}
+</style>
+
+<!-- HEADER SECTION -->
+<header class="text-center margin-bottom-60">
+    <h2>Contact Us</h2>
+    <p class="lead font-lato">You can reach out to us here</p>
+    <hr />
+</header>
+
+<!-- CONTACT HEADER WITH BLURRED BACKGROUND -->
+<section id="contact-header">
+  <div class="content-wrapper">
+    <p class="lead font-lato" style="font-size: 40px;" ><strong>Delhi</strong></p>
+    <hr />
+    <p class="lead font-lato"><strong>TA-3107, S/F,  MAIN OKHLA ROAD,
+TUGHLAKABAD EXTENSION, South Delhi, Delhi, 110019</strong></p>
+    <p class="lead font-lato"><strong>Office@firststepadvisors.in</strong></p>
+    <p class="lead font-lato"><strong>+91 8700084253</strong></p>
+</div>
+
+</section>
+
+			<section id="contact">
+				<div class="container">
+
+					<div class="row">
+
+						<!-- FORM -->
+						<div class="col-md-8 col-sm-8">
+
+							<h3>Drop us a line or just say <strong><em>Hello!</em></strong></h3>
+
+							
+							
+							<!-- Alert Success -->
+							<div id="alert_success" class="alert alert-success margin-bottom-30">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<strong>Thank You!</strong> Your message successfully sent!
+							</div><!-- /Alert Success -->
+
+
+							<!-- Alert Failed -->
+							<div id="alert_failed" class="alert alert-danger margin-bottom-30">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<strong>[SMTP] Error!</strong> Internal server error!
+							</div><!-- /Alert Failed -->
+
+
+							<!-- Alert Mandatory -->
+							<div id="alert_mandatory" class="alert alert-danger margin-bottom-30">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<strong>Sorry!</strong> You need to complete all mandatory (*) fields!
+							</div><!-- /Alert Mandatory -->
+
+
+							<form action="php/contact.php" method="post" enctype="multipart/form-data">
+								<fieldset>
+									<input type="hidden" name="action" value="contact_send" />
+
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-4">
+												<label for="contact:name">Full Name *</label>
+												<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
+											</div>
+											<div class="col-md-4">
+												<label for="contact:email">E-mail Address *</label>
+												<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
+											</div>
+											<div class="col-md-4">
+												<label for="contact:phone">Phone</label>
+												<input type="text" value="" class="form-control" name="contact[phone]" id="contact:phone">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-8">
+												<label for="contact:subject">Subject *</label>
+												<input required type="text" value="" class="form-control" name="contact[subject][required]" id="contact:subject">
+											</div>
+											<!-- <div class="col-md-4">
+												<label for="contact_department">Department</label>
+												<select class="form-control pointer" name="contact[department]">
+													<option value="">--- Select ---</option>
+													<option value="Marketing">Marketing</option>
+													<option value="Webdesign">Webdesign</option>
+													<option value="Architecture">Architecture</option>
+												</select>
+											</div> -->
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-12">
+												<label for="contact:message">Message *</label>
+												<textarea required maxlength="10000" rows="8" class="form-control" name="contact[message]" id="contact:message"></textarea>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="row">
+										<div class="form-group">
+											<div class="col-md-12">
+												<label for="contact:attachment">File Attachment</label>
+
+												<!-- custom file upload -->
+												<!-- <input class="custom-file-upload" type="file" id="file" name="contact[attachment]" id="contact:attachment" data-btn-text="Select a File" />
+												<small class="text-muted block">Max file size: 10Mb (zip/pdf/jpg/png)</small>
+
+											</div>
+										</div>
+									</div> --> 
+
+								</fieldset>
+
+								<div class="row">
+									<div class="col-md-12">
+										<button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> SEND MESSAGE</button>
+									</div>
+								</div>
+							</form>
+
+						</div>
+						<!-- /FORM -->
+
+
+						<!-- INFO -->
+						<div class="col-md-4 col-sm-4">
+
+							<h2>Visit Us</h2>
+						
+							<!-- <div id="map2" class="height-400 grayscale"></div> -->
+<div class="map-responsive" style="overflow:hidden; padding-bottom:56.25%; position:relative; height:0;">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.4563766616485!2d77.25767269999999!3d28.525972199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDMxJzMzLjUiTiA3N8KwMTUnMzUuNSJF!5e0!3m2!1sen!2sin!4v1718534838142!5m2!1sen!2sin"
+    style="border:0; position:absolute; top:0; left:0; width:100%; height:100%;"
+    allowfullscreen="" loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+							<hr />
+
+							<p>
+								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> TA-3107, S/F,  MAIN OKHLA ROAD,
+TUGHLAKABAD EXTENSION, South Delhi, Delhi, 110019</span>
+								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:8700084253">8700084253</a></span>
+								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:Office@firststepadvisors.in">Office@firststepadvisors.in</a></span>
+							</p>
+
+						</div>
+						<!-- /INFO -->
+
+					</div>
+
+				</div>
+			</section>
+			<!-- /CONTACT -->
+
+
+
+			<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+					<div class="row">
+						
+						<div class="col-md-3">
+							<!-- Footer Logo -->
+							<img class="footer-logo" src="assets/images/logo-footer.png" alt="" />
+
+							<!-- Small Description -->
+							<p>.</p>
+
+							<!-- Contact Address -->
+							<address>
+								<ul class="list-unstyled">
+									<li class="footer-sprite address">
+										TA-3107, S/F,  MAIN OKHLA ROAD<br>
+										TUGHLAKABAD EXTENSION,<br>
+										South Delhi, Delhi, 110019<br>
+									</li>
+									<li class="footer-sprite phone">
+										Phone: 8700084253
+									</li>
+									<li class="footer-sprite email">
+										<a href="mailto:Office@firststepadvisors.in">Office@firststepadvisors.in</a>
+									</li>
+								</ul>
+							</address>
+							<!-- /Contact Address -->
+
+						</div>
+
+						<div class="col-md-3">
+
+							<!-- Latest Blog Post -->
+							<!-- <h4 class="letter-spacing-1">LATEST NEWS</h4>
+							<ul class="footer-posts list-unstyled">
+								<li>
+									<a href="#">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue</a>
+									<small>29 June 2015</small>
+								</li>
+								<li>
+									<a href="#">Nullam id dolor id nibh ultricies</a>
+									<small>29 June 2015</small>
+								</li>
+								<li>
+									<a href="#">Duis mollis, est non commodo luctus</a>
+									<small>29 June 2015</small>
+								</li>
+							</ul> -->
+							<!-- /Latest Blog Post -->
+
+						</div>
+
+						<div class="col-md-2">
+
+							<!-- Links -->
+							<!-- <h4 class="letter-spacing-1">EXPLORE SMARTY</h4>
+							<ul class="footer-links list-unstyled">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Our Services</a></li>
+								<li><a href="#">Our Clients</a></li>
+								<li><a href="#">Our Pricing</a></li>
+								<li><a href="#">Smarty Tour</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul> -->
+							<!-- /Links -->
+
+						</div>
+
+						<div class="col-md-4">
+
+							<!-- Newsletter Form -->
+							<h4 class="letter-spacing-1">KEEP IN TOUCH</h4>
+							<p>Subscribe to Our Newsletter to get Important News &amp; Offers</p>
+
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form>
+							<!-- /Newsletter Form -->
+
+							<!-- Social Icons -->
+							<div class="margin-top-20">
+								<a href="#" class="social-icon social-icon-border social-facebook pull-left" data-toggle="tooltip" data-placement="top" title="Facebook">
+
+									<i class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-twitter pull-left" data-toggle="tooltip" data-placement="top" title="Twitter">
+									<i class="icon-twitter"></i>
+									<i class="icon-twitter"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-gplus pull-left" data-toggle="tooltip" data-placement="top" title="Google plus">
+									<i class="icon-gplus"></i>
+									<i class="icon-gplus"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-linkedin pull-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
+									<i class="icon-linkedin"></i>
+									<i class="icon-linkedin"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-rss pull-left" data-toggle="tooltip" data-placement="top" title="Rss">
+									<i class="icon-rss"></i>
+									<i class="icon-rss"></i>
+								</a>
+					
+							</div>
+							<!-- /Social Icons -->
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						<ul class="pull-right nomargin list-inline mobile-block">
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+						&copy; All Rights Reserved, Company LTD
+					</div>
+				</div>
+			</footer>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script type="text/javascript">var plugin_path = 'assets/plugins/';</script>
+		<script type="text/javascript" src="assets/plugins/jquery/jquery-2.2.3.min.js"></script>
+
+		<script type="text/javascript" src="assets/js/scripts.js"></script>
+		
+		<!-- STYLESWITCHER - REMOVE -->
+		<script async type="text/javascript" src="assets/plugins/styleswitcher/styleswitcher.js"></script>
+
+		<!-- PAGELEVEL SCRIPTS -->
+		<script type="text/javascript" src="assets/js/contact.js"></script>
+
+		<!-- 
+			GMAP.JS 
+			http://hpneo.github.io/gmaps/
+		-->
+		<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
+		<script type="text/javascript" src="assets/plugins/gmaps.js"></script>
+		<script type="text/javascript">
+
+			jQuery(document).ready(function(){
+
+				/**
+					@BASIC GOOGLE MAP
+				**/
+				var map2 = new GMaps({
+					div: '#map2',
+					lat: -12.043333,
+					lng: -77.028333,
+					scrollwheel: false
+				});
+
+				var marker = map2.addMarker({
+					lat: -12.043333,
+					lng: -77.028333,
+					title: 'Company, Inc.'
+				});
+
+			});
+
+		</script>
+
+	</body>
+</html>
