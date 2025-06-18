@@ -1,13 +1,13 @@
 /** Brown	#AB8B64
  **************************************************************** **/
 	::selection {
-		background: #AB8B64;
+		background: #fff;
 	}
 	::-moz-selection {
-		background: #AB8B64; /* Firefox */
+		background: #fff; /* Firefox */
 	}
 	::-webkit-selection {
-		background: #AB8B64; /* Safari */
+		background: #fff; /* Safari */
 	}
 
 
@@ -118,7 +118,7 @@
 	#progressBar #bar,								/* OWL */
 	#page-menu,
 	#page-menu ul {
-		background-color:#AB8B64;
+		background-color:#fff;
 	}
 	
 	/* !important required */
@@ -126,7 +126,7 @@
 	#music-player .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,
 	section .theme-background,
 	.swiper-pagination-bullet-active {
-		background-color:#AB8B64 !important;
+		background-color:#fff !important;
 	}
 	.inews-content-inner h3>a,
 	div.side-nav ul>li:hover>a, 
@@ -134,7 +134,7 @@
 	.pagination.pagination-simple>li.active>a,
 	div.side-nav ul.list-group-bordered>li>a:hover,
 	section .theme-color {
-		color:#AB8B64 !important;
+		color:#fff !important;
 	}
 
 	.primary-slider .ui-slider .ui-slider-handle,
@@ -184,7 +184,7 @@
 
 	/* COLOR DROP DOWN MENU */
 	#topNav div.submenu-color ul.dropdown-menu {
-		background-color:#AB8B64;
+		background-color:#fff;
 	}
 	#topNav div.submenu-color ul.dropdown-menu {
 		border-color: #888 #AB8B64 #AB8B64;
@@ -268,7 +268,7 @@ body.menu-vertical #mainMenu.sidebar-vertical .dropdown-menu>.active>a:focus,
 body.menu-vertical #mainMenu.sidebar-vertical .dropdown-menu>.active>a:hover,
 body.menu-vertical #mainMenu.sidebar-vertical .navbar-default .navbar-nav>.active>a,
 body.menu-vertical #mainMenu.sidebar-vertical .sidebar-nav .navbar li:hover>a {
-	color:#AB8B64 !important;
+	color:#fff !important;
 }
 
 
@@ -523,5 +523,5 @@ i.ico-hover:hover {
 .hvr-overline-from-right:before,
 .hvr-underline-reveal:before,
 .hvr-overline-reveal:before {
-	background-color: #AB8B64;
+	background-color: #fff;
 }
