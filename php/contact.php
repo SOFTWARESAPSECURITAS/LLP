@@ -27,10 +27,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["action"]) && $_POST["a
         $mail->isSMTP();
         $mail->Host       = 'smtpout.secureserver.net';         // Your SMTP server (e.g., Gmail)
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'cssshivani2014@gmail.com';   // Your SMTP username (your email)
-        $mail->Password   = 'Shivani@9595';      // Your SMTP password (app password for Gmail)
-        $mail->SMTPSecure = 'tls';                     // Encryption: tls or ssl
-        $mail->Port       = 465;                       // TCP port to connect to
+        $mail->Username   = 'Csshivani2014@gmail.com';   // Your SMTP username (your email)
+        $mail->Password   = 'Shivani@9899';      // Your SMTP password (app password for Gmail)
+       $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // or ENCRYPTION_STARTTLS for port 587
+        $mail->Port       = 465;                      // TCP port to connect to
 
         // Sender and recipient settings
         $mail->setFrom($email, $name);                 // From the user's email
@@ -48,7 +48,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["action"]) && $_POST["a
             <p><strong>Subject:</strong> {$subject}</p>
             <p><strong>Message:</strong><br>" . nl2br(htmlspecialchars($message)) . "</p>
         ";
-
+        $mail->SMTPDebug = 2; 
+        $mail->Debugoutput = 'html';
         $mail->send();
         echo "Message has been sent successfully!";
     } catch (Exception $e) {
