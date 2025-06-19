@@ -24,22 +24,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["action"]) && $_POST["a
 
     try {
         // SMTP server configuration
-        $mail->isSMTP();
-        $mail->Host       = 'smtpout.secureserver.net';         // Your SMTP server (e.g., Gmail)
-        $mail->SMTPAuth   = true;
-        $mail->Username   = 'Csshivani2014@gmail.com';   // Your SMTP username (your email)
-        $mail->Password   = 'Shivani@9899';      // Your SMTP password (app password for Gmail)
-       $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // or ENCRYPTION_STARTTLS for port 587
-        $mail->Port       = 465;                      // TCP port to connect to
+       try {
+$mail->isSMTP();
+$mail->Host = 'smtpout.secureserver.net'; // GoDaddy's SMTP server
+$mail->SMTPAuth = true;
+$mail->Username = 'office@firststepadvisors.in'; // Your SMTP username (full email address)
+$mail->Password = 'Jorsa@123'; // Your SMTP password
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Use ENCRYPTION_SMTPS for port 465
+$mail->Port = 465; // TCP port to connect to
+
 
         // Sender and recipient settings
         $mail->setFrom($email, $name);                 // From the user's email
-        $mail->addAddress('office@firststepadvisors.in', 'Shivani');  // Your email to receive the message
+        $mail->addAddress('Csshivani2014@gmail.com', 'Shivani');  // Your email to receive the message
         $mail->addReplyTo($email, $name);              // Reply to user's email
 
         // Email content
-        $mail->isHTML(true);
-        $mail->Subject = $subject;
+      $mail->isHTML(true); // Set email format to HTML
+$mail->Subject = 'Here is the subject';
+$mail->Body = 'This is the HTML message body in bold!';
+$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+$mail->send();
+echo 'Message has been sent';
+} catch (Exception $e) {
+echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
         $mail->Body    = "
             <h3>New Contact Form Submission</h3>
             <p><strong>Name:</strong> {$name}</p>

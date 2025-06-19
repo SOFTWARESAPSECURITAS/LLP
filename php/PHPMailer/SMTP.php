@@ -142,6 +142,10 @@ class SMTP
      * level output is used:
      *
      * ```php
+     * 
+     * 
+     * 
+     * 
      * $mail->Debugoutput = new myPsr3Logger;
      * ```
      *
