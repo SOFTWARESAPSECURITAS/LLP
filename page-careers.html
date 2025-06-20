@@ -1,1 +1,33 @@
-HELLO , UNDER CONSTRUCTIONS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rotating Image</title>
+  <style>
+    body {
+      margin: 0;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .rotating-image {
+      width: 300px;
+      height: 300px;
+      animation: rotate 8s linear infinite;
+    }
+
+    @keyframes rotate {
+      0%   { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="your-globe-image.png" alt="Rotating Circle" class="rotating-image">
+
+</body>
+</html>
