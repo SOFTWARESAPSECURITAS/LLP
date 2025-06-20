@@ -36,7 +36,8 @@ $mail->Port = 465; // TCP port to connect to
 
         // Sender and recipient settings
         $mail->setFrom($email, $name);                 // From the user's email
-        $mail->addAddress('office@firststepadvisors.in', 'Shivani');  // Your email to receive the message
+        $mail->addAddress('office@firststepadvisors.in', 'Shivani');
+        $mail->addAddress('info@firststepadvisors.in', 'Shivani');  // Your email to receive the message
         $mail->addReplyTo($email, $name);              // Reply to user's email
 
         // Email content
