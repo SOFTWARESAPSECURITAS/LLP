@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["action"]) && $_POST["a
 $mail->isSMTP();
 $mail->Host = 'smtpout.secureserver.net'; // GoDaddy's SMTP server
 $mail->SMTPAuth = true;
-$mail->Username = 'office@firststepadvisors.in'; // Your SMTP username (full email address)
+$mail->Username = 'shivani@firststepadvisors.in'; // Your SMTP username (full email address)
 $mail->Password = 'Jorsa@123'; // Your SMTP password
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Use ENCRYPTION_SMTPS for port 465
 $mail->Port = 465; // TCP port to connect to
@@ -36,14 +36,14 @@ $mail->Port = 465; // TCP port to connect to
 
         // Sender and recipient settings
         $mail->setFrom($email, $name);                 // From the user's email
-        $mail->addAddress('Csshivani2014@gmail.com', 'Shivani');  // Your email to receive the message
+        $mail->addAddress('office@firststepadvisors.in', 'Shivani');  // Your email to receive the message
         $mail->addReplyTo($email, $name);              // Reply to user's email
 
         // Email content
       $mail->isHTML(true); // Set email format to HTML
-$mail->Subject = 'Here is the subject';
+$mail->Subject = 'New Client';
 $mail->Body = 'This is the HTML message body in bold!';
-$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
 
 $mail->send();
 echo 'Message has been sent';
@@ -51,7 +51,7 @@ echo 'Message has been sent';
 echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
         $mail->Body    = "
-            <h3>New Contact Form Submission</h3>
+            <h3>Contact Form Submission</h3>
             <p><strong>Name:</strong> {$name}</p>
             <p><strong>Email:</strong> {$email}</p>
             <p><strong>Phone:</strong> {$phone}</p>
